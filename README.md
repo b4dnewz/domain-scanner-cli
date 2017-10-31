@@ -1,8 +1,6 @@
 ![banner](https://cdn.rawgit.com/b4dnewz/domain-scanner/182a366a/banner.jpg)
 
-<div style="text-align:center">
-  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-</div>
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 
 ## Introduction
 This is the __official cli-tool__ for [domain-scanner](https://github.com/b4dnewz/domain-scanner).
