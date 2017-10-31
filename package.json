@@ -12,7 +12,8 @@
     "lib"
   ],
   "keywords": [
-    "domain-scanner cli-tool"
+    "domain-scanner",
+    "cli-tool"
   ],
   "devDependencies": {
     "coveralls": "^2.13.1",
