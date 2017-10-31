@@ -1,0 +1,84 @@
+{
+  "name": "domain-scanner-cli",
+  "version": "0.0.1",
+  "description": "The command line module for domain-scanner.",
+  "homepage": "",
+  "author": {
+    "name": "b4dnewz",
+    "email": "filippo@codekraft.it",
+    "url": "https://b4dnewz.github.io/"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "domain-scanner cli-tool"
+  ],
+  "devDependencies": {
+    "coveralls": "^2.13.1",
+    "nsp": "^2.6.3",
+    "eslint": "^4.1.0",
+    "prettier": "^1.7.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.2.1",
+    "eslint-config-prettier": "^2.4.0",
+    "eslint-plugin-prettier": "^2.2.0",
+    "eslint-config-xo": "^0.18.2",
+    "jest": "^21.0.0",
+    "jest-cli": "^21.0.0",
+    "lec": "^1.0.1"
+  },
+  "scripts": {
+    "prepublish": "lec lib/index.js -c LF && nsp check",
+    "pretest": "eslint .",
+    "precommit": "lint-staged",
+    "test": "jest"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "xo",
+      "prettier"
+    ],
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "printWidth": 90
+        }
+      ],
+      "no-useless-escape": [
+        "off"
+      ]
+    },
+    "plugins": [
+      "prettier"
+    ]
+  },
+  "repository": "b4dnewz/domain-scanner-cli",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "bin": {
+    "domain-scanner": "lib/index.js"
+  },
+  "dependencies": {
+    "commander": "^2.11.0",
+    "domain-scanner": "0.0.6"
+  },
+  "license": "MIT"
+}
