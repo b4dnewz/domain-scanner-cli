@@ -8,25 +8,20 @@
     "email": "filippo@codekraft.it",
     "url": "https://b4dnewz.github.io/"
   },
-  "files": [
-    "lib"
-  ],
-  "keywords": [
-    "domain-scanner",
-    "cli-tool"
-  ],
+  "files": ["lib"],
+  "keywords": ["domain-scanner", "cli-tool"],
   "devDependencies": {
-    "coveralls": "^2.13.1",
-    "nsp": "^2.6.3",
-    "eslint": "^4.1.0",
-    "prettier": "^1.7.0",
+    "coveralls": "^3.0.0",
+    "nsp": "^3.1.0",
+    "eslint": "^4.11.0",
+    "prettier": "^1.8.2",
     "husky": "^0.14.3",
-    "lint-staged": "^4.2.1",
-    "eslint-config-prettier": "^2.4.0",
-    "eslint-plugin-prettier": "^2.2.0",
-    "eslint-config-xo": "^0.18.2",
-    "jest": "^21.0.0",
-    "jest-cli": "^21.0.0",
+    "lint-staged": "^5.0.0",
+    "eslint-config-prettier": "^2.8.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-config-xo": "^0.19.0",
+    "jest": "^21.2.1",
+    "jest-cli": "^21.2.1",
     "lec": "^1.0.1"
   },
   "scripts": {
@@ -36,20 +31,11 @@
     "test": "jest"
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.json": [
-      "prettier --write",
-      "git add"
-    ]
+    "*.js": ["eslint --fix", "git add"],
+    "*.json": ["prettier --write", "git add"]
   },
   "eslintConfig": {
-    "extends": [
-      "xo",
-      "prettier"
-    ],
+    "extends": ["xo", "prettier"],
     "env": {
       "jest": true,
       "node": true
@@ -62,13 +48,9 @@
           "printWidth": 90
         }
       ],
-      "no-useless-escape": [
-        "off"
-      ]
+      "no-useless-escape": ["off"]
     },
-    "plugins": [
-      "prettier"
-    ]
+    "plugins": ["prettier"]
   },
   "repository": "b4dnewz/domain-scanner-cli",
   "jest": {
@@ -78,8 +60,8 @@
     "domain-scanner": "lib/index.js"
   },
   "dependencies": {
-    "commander": "^2.11.0",
-    "domain-scanner": "0.0.6"
+    "commander": "^2.12.1",
+    "domain-scanner": "0.0.7"
   },
   "license": "MIT"
 }
