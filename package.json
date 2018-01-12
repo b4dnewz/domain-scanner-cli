@@ -13,22 +13,18 @@
   "devDependencies": {
     "coveralls": "^3.0.0",
     "nsp": "^3.1.0",
-    "eslint": "^4.11.0",
-    "prettier": "^1.8.2",
+    "eslint": "^4.15.0",
+    "prettier": "^1.10.2",
     "husky": "^0.14.3",
-    "lint-staged": "^5.0.0",
-    "eslint-config-prettier": "^2.8.0",
-    "eslint-plugin-prettier": "^2.3.1",
+    "lint-staged": "^6.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.4.0",
     "eslint-config-xo": "^0.19.0",
-    "jest": "^21.2.1",
-    "jest-cli": "^21.2.1",
     "lec": "^1.0.1"
   },
   "scripts": {
     "prepublish": "lec lib/index.js -c LF && nsp check",
-    "pretest": "eslint .",
-    "precommit": "lint-staged",
-    "test": "jest"
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "*.js": ["eslint --fix", "git add"],
@@ -37,7 +33,6 @@
   "eslintConfig": {
     "extends": ["xo", "prettier"],
     "env": {
-      "jest": true,
       "node": true
     },
     "rules": {
@@ -53,15 +48,12 @@
     "plugins": ["prettier"]
   },
   "repository": "b4dnewz/domain-scanner-cli",
-  "jest": {
-    "testEnvironment": "node"
-  },
   "bin": {
     "domain-scanner": "lib/index.js"
   },
   "dependencies": {
-    "commander": "^2.12.1",
-    "domain-scanner": "0.0.7"
+    "commander": "^2.13.0",
+    "domain-scanner": "0.0.8"
   },
   "license": "MIT"
 }

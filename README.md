@@ -3,7 +3,7 @@
 ## Introduction
 This is the __official cli-tool__ for [domain-scanner](https://github.com/b4dnewz/domain-scanner).
 It can perform various type of analysis against a given hostname. For example it can enumerate subdomains, emails, breaches and many more, of a given domain.
-Ror all the __issues__ regarding the scanner, ensure to open issues in [domain-scanner](https://github.com/b4dnewz/domain-scanner) repository.
+For all the __issues__ regarding the scanner, ensure to open issues in [domain-scanner](https://github.com/b4dnewz/domain-scanner) repository.
 
 ## Installation
 Install the module globally to access it from the command line:
@@ -12,7 +12,7 @@ $ npm install -g domain-scanner-cli
 ```
 
 ## Usage
-You can always get the informations and usage of the program by typing:
+You can get the informations and usage of the program by typing __--help__:
 ```
 $ domain-scanner --help
 
