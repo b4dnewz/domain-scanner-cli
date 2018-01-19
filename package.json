@@ -1,6 +1,6 @@
 {
   "name": "domain-scanner-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The command line module for domain-scanner.",
   "homepage": "",
   "author": {
