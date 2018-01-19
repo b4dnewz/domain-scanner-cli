@@ -9,6 +9,7 @@ For all the __issues__ regarding the scanner, ensure to open issues in [domain-s
 Install the module globally to access it from the command line:
 ```sh
 $ npm install -g domain-scanner-cli
+$ yarn global add domain-scanner-cli
 ```
 
 ## Usage
