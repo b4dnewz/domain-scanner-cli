@@ -458,9 +458,9 @@ dom-serializer@0, dom-serializer@~0.1.0:
     domelementtype "~1.1.1"
     entities "~1.1.1"
 
-domain-scanner@0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/domain-scanner/-/domain-scanner-0.0.10.tgz#df0b0c1c532b51b3f5c9095bbf37832e45fb3695"
+domain-scanner@0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/domain-scanner/-/domain-scanner-0.0.11.tgz#43043e97b09734b620c307dced4a1dc936c4b45c"
   dependencies:
     async "^2.6.0"
     geoip-lite "^1.2.1"
