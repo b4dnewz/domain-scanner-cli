@@ -1,7 +1,7 @@
 {
   "name": "domain-scanner-cli",
   "description": "The command line module for domain-scanner.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage": "https://b4dnewz.github.io/domain-scanner/",
   "author": {
     "name": "b4dnewz",
