@@ -13,8 +13,13 @@
   "bin": {
     "domain-scanner": "lib/cmd.js"
   },
-  "files": ["lib"],
-  "keywords": ["domain-scanner", "cli-tool"],
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "domain-scanner",
+    "cli-tool"
+  ],
   "dependencies": {
     "chalk": "^2.3.2",
     "commander": "^2.15.0",
@@ -38,11 +43,20 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.js": ["eslint --fix", "git add"],
-    "*.json": ["prettier --write", "git add"]
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "eslintConfig": {
-    "extends": ["xo", "prettier"],
+    "extends": [
+      "xo",
+      "prettier"
+    ],
     "env": {
       "node": true
     },
@@ -54,8 +68,12 @@
           "printWidth": 90
         }
       ],
-      "no-useless-escape": ["off"]
+      "no-useless-escape": [
+        "off"
+      ]
     },
-    "plugins": ["prettier"]
+    "plugins": [
+      "prettier"
+    ]
   }
 }
